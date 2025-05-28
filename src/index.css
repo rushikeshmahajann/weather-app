@@ -1,0 +1,8 @@
+@import './fonts.css';
+@import "tailwindcss";
+
+@theme {
+    --font-montreal: "NeueMontreal", 'sans serif';
+    --color-gray: #F0F1F6;
+}
+
