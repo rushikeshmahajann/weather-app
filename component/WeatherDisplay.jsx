@@ -25,7 +25,7 @@ const WeatherDisplay = () => {
 
   return (
     <div className="flex flex-col justify-center items-center gap-1">
-      <div className="mt-10 w-max bg-white px-18 py-6 md:px-12 md:py-10 rounded-3xl relative flex flex-col items-center justify-center">
+      <div className="mt-10 w-max bg-white px-18 py-6 md:px-18 md:py-10 rounded-3xl relative flex flex-col items-center justify-center">
         <h2 className="leading-6 tracking-tight text-xl md:text-2xl font-light text-gray-400">
           {location.name}, {location.country}
         </h2>
@@ -87,15 +87,15 @@ const WeatherDisplay = () => {
 
             <div>
               <h5 className="text-xs md:text-base font-medium text-gray-400">max</h5>
-              <p className="tracking-tighter text-lg md:text-2xl">{item.day.maxtemp_c}°C</p>
+              <p className="tracking-tighter text-sm md:text-base">{item.day.maxtemp_c}°C</p>
             </div>
             <div>
               <h5 className="text-xs md:text-base font-medium text-gray-400">avg</h5>
-              <p className="tracking-tighter text-lg md:text-2xl">{item.day.avgtemp_c}°C</p>
+              <p className="tracking-tighter text-sm md:text-base ">{item.day.avgtemp_c}°C</p>
             </div>
             <div>
               <h5 className="text-xs md:text-base font-medium text-gray-400">min</h5>
-              <p className="tracking-tighter text-lg md:text-2xl">{item.day.mintemp_c}°C</p>
+              <p className="tracking-tighter text-sm md:text-base">{item.day.mintemp_c}°C</p>
             </div>
           </div>
         ))}
